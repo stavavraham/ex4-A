@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Form 1</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    
+    <form action="http://se.shenkar.ac.il/teach/web1/2021/get_form3.php" method="GET" id="sectionForm" autocomplete="on">
+    <div class="registration-form">
+           
+            <h1>Join Our Member Club</h1>
+            <div class="form-group">
+                <input type="text" class="form-control item" id="username" placeholder="Full Name" name="fullName" pattern="\w+\s+\w+" required title="you forgot to fill it correctly">
+            
+            </div>
+
+            <div class="form-group">
+                <input class="form-control item" id="email" placeholder="Email"
+               type="email" name="mail" required title="you forgot to fill it correctly">
+            </div>
+
+
+            <div class="form-group">
+                <input type="password" class="form-control item" id="password" placeholder="Password"
+               name="pass" required title="4 numbers only" maxlength="4" pattern="\d{4}" minlength="4">
+            </div>
+
+         
+            <div class="form-group">
+                <input type="url"  name="website" required title="you forgot to fill it correctly" class="form-control item" 
+                placeholder="Website">
+            </div>
+
+            <div class="form-group">
+            <input type="tel" name="phone" placeholder="phone number"  class="form-control item"  required title="9 or 10 numbers only" maxlength="10" pattern="\d{10}" minlength="9">
+            </div>
+
+            <div class="form-group">
+                <input type="number"  name="coffee" class="form-control item"  
+                placeholder="Coffee">
+            </div>
+            <label>Temperature:</label>
+            <div class="form-group">
+                <input  type="range" name="temper" min="1" max="10" >
+            </div>
+
+            <div class="form-group">
+                <input type="text" class="form-control item" id="birth-date" placeholder="Address">
+            </div>
+            
+    
+
+<label>Interests:</label>
+
+
+<div class="form-group">
+<label>Reading Books <input type="checkbox"  name="interests[]" value="Reading Books"  ></label>
+<br>
+<label>Coding <input type="checkbox"  name="interests[]" value="Coding"></label>
+<br>
+<label>travel <input type="checkbox"  name="interests[]" value="travel"></label>
+<br>
+<label>bed <input type="checkbox" name="interests[]" value="bed"></label>
+<br>
+</div>  
+
+<div class="form-group">
+<label>Female <input type="radio" name="gender" value="Female" ></label>
+<label>Male <input type="radio" name="gender" value="Male"></label>
+<label>Another <input type="radio" name="gender" value="Another"></label>
+<br>
+</div>
+
+<div class="form-group">
+<label for="age">Age:</label>
+<select name="age" id="age" required title="you forgot to fill it">
+    <option value="">Choose</option>
+    <option value="18">18</option>
+    <option value="19">19</option>
+    <option value="20">20</option>
+    <option value="21">21</option>
+    <option value="22">22</option>
+    <option value="23">23</option>
+    <option value="24">24</option>
+</select>
+
+</div>
+
+
+            <div class="form-group">
+                <input type="submit"  class="btn btn-block create-account">
+            </div>
+
+    </div>
+ </form>
+       
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
